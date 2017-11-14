@@ -1,0 +1,33 @@
+import pandas as pd
+from matplotlib import pyplot as plt
+psycho_data = pd.read_csv("psychometric_info.csv")
+
+bins=max(psycho_data["O"])-min(psycho_data["O"])+1
+plt.hist(psycho_data["O"],bins)
+plt.xlabel('O value')
+plt.ylabel('number of people')
+plt.show()
+
+bins=max(psycho_data["C"])-min(psycho_data["C"])+1
+plt.hist(psycho_data["C"],bins)
+plt.xlabel('C value')
+plt.ylabel('number of people')
+plt.show()
+
+bins=max(psycho_data["E"])-min(psycho_data["E"])+1
+plt.hist(psycho_data["E"],bins)
+plt.xlabel('E value')
+plt.ylabel('number of people')
+plt.show()
+
+bins=max(psycho_data["A"])-min(psycho_data["A"])+1
+plt.hist(psycho_data["A"],bins)
+plt.xlabel('A value')
+plt.ylabel('number of people')
+plt.show()
+
+bins=max(psycho_data["N"])-min(psycho_data["N"])+1
+plt.hist(psycho_data["N"],bins)
+plt.xlabel('N value')
+plt.ylabel('number of people')
+plt.show()
