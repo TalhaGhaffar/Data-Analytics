@@ -2,7 +2,7 @@ import pandas as pd
 from textblob import Blobber
 from textblob.sentiments import NaiveBayesAnalyzer
 
-# use naive bayes classifier. Gives better results than PatternAnalyzer
+# use naive bayes Analyzer. Gives better results than PatternAnalyzer
 # The output data frame is sorted by the p_neg values
 
 tb = Blobber(analyzer=NaiveBayesAnalyzer())
