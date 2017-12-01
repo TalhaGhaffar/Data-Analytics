@@ -17,7 +17,7 @@ iteration = 1
 counter = Counter()
 
 
-def convertDF(urlContDict, counterDict):
+def convertDF(counterDict):
     urls = list(urlContentDict.keys())
     contents = list(urlContentDict.values())
     counts = list(counterDict.values())
@@ -35,7 +35,7 @@ for df in pd.read_csv(fileLocation, sep=',', usecols=[4, 5], chunksize=1000000):
     print(iteration)
     iteration += 1
 
-convertDF(urlContentDict, counter)
+convertDF(counter)
 
 print(len(counter))
 
