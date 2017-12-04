@@ -15,7 +15,7 @@ def get_polarity_and_subjectivity(text):
     blob = TextBlob(text)
     return pd.Series({"polarity": blob.sentiment.polarity, "subjectivity": blob.sentiment.subjectivity})
 
-chunk_size = 10000
+chunk_size = 100000
 email_chunks = pd.read_csv(_dataset2_dir + "email_info.csv", index_col=0, chunksize=chunksize)
 
 # breakAt = 3
