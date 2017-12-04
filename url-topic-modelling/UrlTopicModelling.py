@@ -60,4 +60,3 @@ else:
 
 print(lda_model.show_topics(formatted=False))
 
-print(lda_model.__dict__)
