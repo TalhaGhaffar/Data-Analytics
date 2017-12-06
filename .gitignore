@@ -5,3 +5,6 @@ Utility.py
 url_count_content_descending - original.csv
 url-sentiment-analysis/archive
 utility/
+email_emp_df
+new_email_emp_df
+new_email_emp_df.csv
