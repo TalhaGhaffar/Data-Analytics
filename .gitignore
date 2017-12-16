@@ -10,3 +10,6 @@ new_email_emp_df
 new_email_emp_df.csv
 it_admin_email_content.csv
 it_admin_email_category.csv
+dataset2/email_sentiment_analysis_df
+email_sentiment_analysis_df_vader
+email_data_hm
